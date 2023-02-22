@@ -1,9 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply bg-dark;
+    @apply bg-dark font-sans;
+  }
+}
+
+@layer utilities {
+  .section-badge {
+    @apply text-base leading-8 font-semibold;
+  }
+
+  .section-paragraph {
+    @apply text-base leading-8 font-medium;
+  }
+
+  .page-title {
+    @apply text-4xl leading-[54px] font-bold;
+  }
+
+  .page-description {
+    @apply text-base leading-8 font-medium;
+  }
+
+  .section-title {
+    @apply text-3xl leading-[48px] font-bold;
+  }
+
+  .card-title {
+    @apply text-lg font-bold;
+  }
+
+  .card-paragraph {
+    @apply text-base leading-8 font-medium;
+  }
+
+  .pricing-price {
+    @apply text-4xl font-bold;
+  }
+
+  .pricing-title {
+    @apply text-base font-bold;
+  }
+
+  .pricing-detail {
+    @apply text-base leading-9 font-medium;
+  }
+
+  .form-label {
+    @apply text-sm font-normal;
+  }
+
+  .project-title {
+    @apply text-xl leading-[34px] font-bold;
+  }
+
+  .project-description {
+    @apply text-base leading-[34px] font-normal;
+  }
+
+  .small-card-title {
+    @apply text-base font-semibold;
+  }
+
+  .small-card-description {
+    @apply text-sm leading-6 font-normal;
+  }
+
+  .featured-card-title {
+    @apply text-lg font-bold;
+  }
+
+  .featured-card-description {
+    @apply text-base leading-8 font-medium;
+  }
+
+  .faq-description {
+    @apply text-base leading-8 font-medium;
+  }
+
+  .faq-title {
+    @apply text-xl leading-[48px] font-bold;
+  }
+
+  .statistic-value {
+    @apply text-4xl font-bold;
+  }
+
+  .statistic-label {
+    @apply text-base font-bold;
+  }
+
+  .testimonial-company {
+    @apply text-sm font-medium;
+  }
+
+  .testimonial-name {
+    @apply text-lg font-bold;
+  }
+
+  .testimonial-description {
+    @apply text-base leading-8 font-medium;
+  }
+
+  .team-name {
+    @apply text-lg font-bold;
+  }
+
+  .team-job {
+    @apply text-sm font-medium;
+  }
+
+  .blog-title {
+    @apply text-xl leading-[34px] font-bold;
+  }
+
+  .blog-lead {
+    @apply text-lg leading-[34px] font-medium;
+  }
+
+  .project-detail-label {
+    @apply text-sm font-semibold;
+  }
+
+  .project-detail-value {
+    @apply text-base font-semibold;
+  }
+
+  .page-content {
+    @apply text-base leading-[34px] font-medium;
+  }
+
+  .page-subtitle {
+    @apply text-3xl leading-[48px] font-bold;
+  }
+
+  .blog-headline {
+    @apply text-xl leading-10 font-medium;
+  }
+
+  .blog-content {
+    @apply text-base leading-[34px] font-medium;
+  }
+
+  .blog-subtile {
+    @apply text-3xl leading-[48px] font-bold;
+  }
+
+  .blog-quote {
+    @apply text-xl leading-10 font-medium;
+  }
+
+  .blog-quote-name {
+    @apply text-smm fons-sans font-medium;
+  }
+
+  .author-name {
+    @apply text-xl font-semibold;
+  }
+
+  .author-job {
+    @apply text-xs font-semibold;
+  }
+
+  .author-bio {
+    @apply text-base leading-[34px] font-medium;
+  }
+
+  .comment-time {
+    @apply text-sm font-regular;
+  }
+
+  .comment-name {
+    @apply text-xl font-semibold;
+  }
+
+  .comment-content {
+    @apply text-base leading-8 font-medium;
   }
 }
