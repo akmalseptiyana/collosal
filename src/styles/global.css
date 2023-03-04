@@ -28,7 +28,7 @@
   }
 
   .section-title {
-    @apply text-3xl leading-[48px] font-bold;
+    @apply text-2xl md:text-3xl md:leading-[48px] font-bold;
   }
 
   .card-title {
@@ -182,4 +182,29 @@
   .comment-content {
     @apply text-base leading-8 font-medium;
   }
+}
+
+.post-content {
+  @apply text-base leading-[34px] font-medium text-white;
+}
+
+.post-content h2 {
+  @apply text-3xl leading-[48px] font-bold text-white;
+}
+
+.post-content ul {
+  @apply list-disc ml-9;
+}
+
+/* Override Swiper css */
+.swiper-slide {
+  padding-top: 44px !important;
+  padding-bottom: 117px !important;
+}
+.swiper-pagination-bullet {
+  background-blend-mode: overlay !important;
+  background-color: #fff !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
 }

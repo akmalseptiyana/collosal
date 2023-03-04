@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import { Button } from "../ui/button";
-import { Close } from "../ui/icons/close";
+import { Button } from "@src/components/ui/button";
+import { Close } from "@src/components/ui/icons/close";
 import { navigationMenuLinks } from "@src/lib/navigation-menu-links";
 import { cn } from "@src/lib/utils";
 
@@ -15,7 +15,7 @@ export function MobileNav({ isMobileMenu, setMobileMenu }: MobileNavProps) {
   return (
     <div
       className={cn(
-        "fixed top-0 w-3/5 bg-primary h-screen grid place-items-center transition-all ease-in-out duration-200 md:hidden",
+        "fixed z-50 top-0 w-3/5 bg-primary h-screen grid place-items-center transition-all ease-in-out duration-200 lg:hidden",
         isMobileMenu ? "right-0" : "-right-full",
       )}
     >

@@ -13,13 +13,24 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-postcss",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-mdx",
     {
-      resolve: `gatsby-plugin-alias-imports`,
+      resolve: "gatsby-plugin-alias-imports",
       options: {
         alias: {
           "@src": path.resolve(__dirname, "src"),
         },
         extensions: ["js", "jsx", "ts", "tsx"],
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "blog",
+        path: `${__dirname}/src/blog`,
       },
     },
   ],

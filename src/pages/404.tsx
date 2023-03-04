@@ -1,49 +1,30 @@
-import * as React from "react"
-import { Link, HeadFC, PageProps } from "gatsby"
+import * as React from "react";
+import { Link, HeadFC, PageProps } from "gatsby";
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+import { LayoutRoot } from "@src/components/layout/layout-root";
+import { Button } from "@src/components/ui/button";
 
 const NotFoundPage: React.FC<PageProps> = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+    <LayoutRoot>
+      <section className="container mt-[137px] text-center">
+        <p className="section-badge text-red">ERROR</p>
+        <h1 className="page-title mt-[13px] text-white">
+          The page you are looking <br /> for is not on this website, <br />{" "}
+          please check again
+        </h1>
+        <p className="page-description mx-auto mt-6 max-w-[502px] text-muted">
+          The system cannot find the page you are looking for, maybe you have
+          the wrong path or the page has been deleted.
+        </p>
+        <Button variant="light-white" size="lg" className="mt-[30px]">
+          <Link to="/">Back to Home</Link>
+        </Button>
+      </section>
+    </LayoutRoot>
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;
 
-export const Head: HeadFC = () => <title>Not found</title>
+export const Head: HeadFC = () => <title>Not found</title>;

@@ -17,6 +17,10 @@ const navigationMenuLinks: NavigationItem[] = [
     name: "Projects",
   },
   {
+    href: "/blog",
+    name: "Blog",
+  },
+  {
     href: "/about",
     name: "About",
   },

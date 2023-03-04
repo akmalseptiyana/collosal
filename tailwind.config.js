@@ -9,13 +9,9 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: {
-        DEFAULT: "1rem",
-        sm: "1.5rem",
-        "2xl": "13rem",
-      },
+      padding: "1.5rem",
       screens: {
-        "2xl": "1440px",
+        lg: "1072px",
       },
     },
     extend: {
@@ -29,6 +25,8 @@ module.exports = {
         "primary-light": "#6016FC1A",
         "button-light": "#FFFFFF1A",
         muted: "#FFFFFF99",
+        light: "#FFFFFF0D",
+        "border-light": "#FFFFFF1A",
       },
       fontFamily: {
         sans: ["Noto Sans", ...defaultTheme.fontFamily.sans],

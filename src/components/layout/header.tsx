@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import { MenuToggle } from "../ui/icons/menu-toggle";
-import { MobileNav } from "./mobile-nav";
+import { MenuToggle } from "@src/components/ui/icons/menu-toggle";
+import { MobileNav } from "@src/components/layout/mobile-nav";
 import { Logo } from "@src/components/ui/icons/logo";
 import { MainNav } from "@src/components/layout/main-nav";
 
@@ -19,7 +19,7 @@ export function Header() {
           <MainNav />
           <MobileNav isMobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />
 
-          <div className="md:hidden" onClick={() => setMobileMenu(true)}>
+          <div className="lg:hidden" onClick={() => setMobileMenu(true)}>
             <MenuToggle />
           </div>
         </nav>
