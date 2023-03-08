@@ -23,7 +23,7 @@ export function ServicesMaintenance() {
       <Container className="container mt-[115px] flex flex-wrap items-center justify-between gap-y-20">
         <StaticImage
           src="../../images/maintenance-illustration.svg"
-          alt="Maintenance Illustration"
+          alt="Maintenance"
           className="mx-auto lg:flex-1"
         />
         <InnerSection className="lg:max-w-[502px]">

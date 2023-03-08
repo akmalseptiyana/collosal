@@ -44,7 +44,7 @@ export function ServicesDevelopment() {
         </InnerSection>
         <StaticImage
           src="../../images/development-illustration.svg"
-          alt="Development Illustration"
+          alt="Development"
           className="mx-auto"
         />
       </Container>
