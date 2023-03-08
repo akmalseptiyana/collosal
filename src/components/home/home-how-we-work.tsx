@@ -1,6 +1,10 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { Container } from "../ui/container";
+import { InnerSection } from "../ui/section/inner-section";
+import { Badge } from "../ui/section/badge";
+import { Title } from "../ui/section/title";
+import { Paragraph } from "../ui/section/paragraph";
 import { HomeSection } from "./home-section";
 
 export function HomeHowWeWork() {
@@ -14,18 +18,18 @@ export function HomeHowWeWork() {
               alt="how we work illustration"
             />
           </figure>
-          <div className="text-center md:text-start lg:max-w-[502px]">
-            <p className="section-badge text-green">HOW WE WORK?</p>
-            <h2 className="section-title mt-1 text-white">
+          <InnerSection className="text-center md:text-start lg:max-w-[502px]">
+            <Badge>HOW WE WORK?</Badge>
+            <Title>
               Everything is well planned, well designed and developed
               wholeheartedly
-            </h2>
-            <p className="section-paragraph mt-7 text-muted">
+            </Title>
+            <Paragraph>
               Careful planning makes us confident, developed with best practices
               so that the project can be maintained. We always test projects
               before they are shipped.
-            </p>
-          </div>
+            </Paragraph>
+          </InnerSection>
         </div>
       </Container>
     </HomeSection>

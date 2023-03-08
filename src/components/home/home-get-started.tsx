@@ -1,6 +1,8 @@
 import * as React from "react";
 
 import { Container } from "../ui/container";
+import { Title } from "../ui/section/title";
+import { Badge } from "../ui/section/badge";
 import { HomeSection } from "./home-section";
 import { PricingCard } from "@src/components/pricing-card";
 
@@ -9,10 +11,10 @@ export function HomeGetStarted() {
     <HomeSection>
       <Container className="mx-auto mt-[110px] max-w-[1303px] bg-highlight pt-[90px] pb-[145px] xl:rounded-[30px]">
         <Container className="mx-auto max-w-[1024px]">
-          <p className="section-badge text-center text-green">GET STARTED</p>
-          <h2 className="section-title mt-1 text-center text-white">
+          <Badge className="text-center">GET STARTED</Badge>
+          <Title className="text-center">
             What do you need? Choose a <br /> service that can help you
-          </h2>
+          </Title>
           <ul className="mt-[70px] flex flex-wrap justify-center gap-5">
             {services.map((item, index) => (
               <PricingCard

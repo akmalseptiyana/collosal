@@ -7,17 +7,19 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { Container } from "../ui/container";
+import { Badge } from "../ui/section/badge";
+import { Title } from "../ui/section/title";
 import { HomeSection } from "./home-section";
 import { TestimonialCard } from "@src/components/testimonial-card";
 
 export function HomeTestimonial() {
   return (
     <HomeSection>
-      <Container className="mt-[120px] px-4 sm:px-6 xl:px-0">
-        <p className="section-badge text-center text-green">TESTIMONIAL</p>
-        <h2 className="section-title text-center text-white">
+      <Container className="mt-[120px] mb-[106px] px-4 sm:px-6 xl:px-0">
+        <Badge className="text-center">TESTIMONIAL</Badge>
+        <Title className="text-center">
           What do our clients say that we <br /> never let down?
-        </h2>
+        </Title>
         <Swiper
           modules={[Pagination, EffectCoverflow]}
           slidesPerView={1}

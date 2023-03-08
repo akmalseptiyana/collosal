@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import { Container } from "../ui/container";
+import { Badge } from "../ui/section/badge";
 import { HomeSection } from "./home-section";
 import { Button } from "@src/components/ui/button";
 
@@ -8,7 +9,7 @@ export function HomeStart() {
   return (
     <HomeSection>
       <Container className="container mt-[101px] text-center">
-        <p className="section-badge text-green">CLIENT-DEVELOPMENT DRIVEN</p>
+        <Badge>CLIENT-DEVELOPMENT DRIVEN</Badge>
         <h1 className="page-title mt-3 text-white">
           We Design. We Develop. We Ship. <br /> In The Same Day.
         </h1>

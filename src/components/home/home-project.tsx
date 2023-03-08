@@ -2,6 +2,8 @@ import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
 import { Container } from "../ui/container";
+import { Badge } from "../ui/section/badge";
+import { Title } from "../ui/section/title";
 import { HomeSection } from "./home-section";
 import { ProjectCard } from "@src/components/project-card";
 
@@ -9,10 +11,10 @@ export function HomeProject() {
   return (
     <HomeSection>
       <Container className="container mt-[118px]">
-        <p className="section-badge text-center text-green">PROJECTS</p>
-        <h2 className="section-title mx-auto max-w-[507px] text-center text-white">
+        <Badge className="text-center">PROJECTS</Badge>
+        <Title className="mx-auto max-w-[507px] text-center">
           We have completed many amazing projects that you will not believe
-        </h2>
+        </Title>
         <ul className="mt-[71px] flex flex-wrap gap-x-5 gap-y-20">
           <ProjectCard
             img={

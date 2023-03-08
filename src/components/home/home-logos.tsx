@@ -9,6 +9,7 @@ import {
   Microsoft,
   Facebook,
 } from "@src/components/ui/icons";
+import { cn } from "@src/lib/utils";
 
 type Props = {
   className?: string;
@@ -17,7 +18,7 @@ type Props = {
 export function HomeLogos({ className }: Props) {
   return (
     <HomeSection>
-      <Container className="container mt-[60px]">
+      <Container className={cn("container mt-[60px]", className)}>
         <ul className="flex flex-wrap items-center justify-center gap-11 border-y border-border-light py-[34px]">
           <li>
             <figure>
