@@ -13,7 +13,7 @@ const BlogDetail: React.FC<PageProps> = ({ data, children }) => {
   return (
     <LayoutRoot>
       <Page>
-        <Container className="container mt-[101px] mb-[117px]">
+        <Container className="container mb-[117px]">
           <article>
             <PageHeader title="PAGE" description={data.mdx.frontmatter.title} />
             <GatsbyImage
