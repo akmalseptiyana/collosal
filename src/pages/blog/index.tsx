@@ -1,5 +1,5 @@
 import * as React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 import type { HeadFC, PageProps } from "gatsby";
 
@@ -7,17 +7,18 @@ import { LayoutRoot } from "@src/components/layout/layout-root";
 import { Page, PageHeader } from "@src/components/layout/page";
 import { Container } from "@src/components/ui/container";
 import { BlogCard } from "@src/components/blog/blog-card";
+import { Divider } from "@src/components/ui/divider";
 
 const BlogPage: React.FC<PageProps> = ({ data }) => {
   return (
     <LayoutRoot>
       <Page>
-        <Container className="container mt-[101px]">
+        <Container className="container">
           <PageHeader
             title="BLOG"
             description="Get precise knowledge wherever you are"
           />
-          <hr className="mx-auto mt-[89px] max-w-[1024px] border-border-light" />
+          <Divider className="mt-[89px]" />
           {/* <BlogGrid className="mt-[90px] mb-[88px]" /> */}
           <Container className="my-[90px]">
             {data.allMdx.nodes.map((node) => {

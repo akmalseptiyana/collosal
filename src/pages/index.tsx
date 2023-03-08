@@ -11,6 +11,7 @@ import { HomeGetStarted } from "@src/components/home/home-get-started";
 import { HomeTestimonial } from "@src/components/home/home-testimonial";
 import { Page } from "@src/components/layout/page";
 import { HomeLogos } from "@src/components/home/home-logos";
+import { Divider } from "@src/components/ui/divider";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -21,7 +22,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <HomeLogos />
         <HomeHowWeWork />
         <HomeOurTeam />
-        <hr className="mx-auto mt-[118px] max-w-[1024px] border-border-light" />
+        <Divider className="mt-[118px]" />
         <HomeProject />
         <HomeGetStarted />
         <HomeTestimonial />
