@@ -7,7 +7,7 @@ type PageHeaderProps = {
 
 export function PageHeader({ title, description }: PageHeaderProps) {
   return (
-    <header>
+    <header className="mt-[101px]">
       <div className="container">
         <div className="text-center">
           <p className="section-badge text-green">{title}</p>
