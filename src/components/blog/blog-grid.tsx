@@ -35,15 +35,6 @@ export type BlogItem = {
 
 const blogLists: BlogItem[] = [
   {
-    blogImage: <StaticImage src="../../images/blog-1.png" alt="traffic" />,
-    blogTitle: "10 Figma Plugins that will increase your productivity",
-    blogDescription: "All these plugins are free and you can use them forever",
-    author: <StaticImage src="../../images/author-1.png" alt="author" />,
-    authorName: "Alex Berner",
-    date: "Mar 11",
-    readingTime: "3 min read",
-  },
-  {
     blogImage: <StaticImage src="../../images/blog-2.png" alt="traffic" />,
     blogTitle: "How to deploy a Node JS application to a VPS",
     blogDescription:
