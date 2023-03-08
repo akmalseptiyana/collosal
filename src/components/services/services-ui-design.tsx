@@ -45,7 +45,7 @@ export function ServicesUiDesign() {
               />
             </div>
             <Link
-              to="/service-detail"
+              to="/services/detail"
               className="flex items-center self-end text-base font-semibold text-white"
             >
               Service Detail
