@@ -15,8 +15,8 @@ const BlogPage: React.FC<PageProps> = ({ data }) => {
       <Page>
         <Container className="container">
           <PageHeader
-            title="BLOG"
-            description="Get precise knowledge wherever you are"
+            badge="BLOG"
+            title="Get precise knowledge wherever you are"
           />
           <Divider className="mt-[89px]" />
           {/* <BlogGrid className="mt-[90px] mb-[88px]" /> */}

@@ -1,18 +1,20 @@
 import * as React from "react";
 
+import { Badge } from "@src/components/ui/section/badge";
+
 type PageHeaderProps = {
+  badge: string;
   title: string;
-  description: string;
 };
 
-export function PageHeader({ title, description }: PageHeaderProps) {
+export function PageHeader({ badge, title }: PageHeaderProps) {
   return (
     <header className="mt-[101px]">
       <div className="container">
         <div className="text-center">
-          <p className="section-badge text-green">{title}</p>
+          <Badge>{badge}</Badge>
           <h1 className="page-title mx-auto mt-1 max-w-[507px] text-white">
-            {description}
+            {title}
           </h1>
         </div>
       </div>

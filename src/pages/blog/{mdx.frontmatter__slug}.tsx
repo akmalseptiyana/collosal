@@ -15,7 +15,7 @@ const BlogDetail: React.FC<PageProps> = ({ data, children }) => {
       <Page>
         <Container className="container mb-[117px]">
           <article>
-            <PageHeader title="PAGE" description={data.mdx.frontmatter.title} />
+            <PageHeader badge="PAGE" title={data.mdx.frontmatter.title} />
             <GatsbyImage
               image={image}
               alt={data.mdx.frontmatter.hero_image_alt}

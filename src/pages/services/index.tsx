@@ -13,8 +13,8 @@ const ServicesPage: React.FC<PageProps> = () => {
     <LayoutRoot>
       <Page>
         <PageHeader
-          title="SERVICES"
-          description="We are here to help solve your company's problems"
+          badge="SERVICES"
+          title="We are here to help solve your company's problems"
         />
         <Divider className="mt-[89px]" />
         <ServicesUiDesign />
