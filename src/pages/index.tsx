@@ -10,7 +10,7 @@ import { HomeProject } from "@src/components/home/home-project";
 import { HomeGetStarted } from "@src/components/home/home-get-started";
 import { HomeTestimonial } from "@src/components/home/home-testimonial";
 import { Page } from "@src/components/layout/page";
-import { HomeLogos } from "@src/components/home/home-logos";
+import { Logos } from "@src/components/logos";
 import { Divider } from "@src/components/ui/divider";
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -19,7 +19,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Page>
         <HomeStart />
         <HomeFeatured />
-        <HomeLogos />
+        <Logos />
         <HomeHowWeWork />
         <HomeOurTeam />
         <Divider className="mt-[118px]" />
