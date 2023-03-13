@@ -12,7 +12,7 @@
 
 @layer utilities {
   .section-badge {
-    @apply text-base leading-8 font-semibold;
+    @apply text-base leading-8 font-semibold tracking-[10%];
   }
 
   .section-paragraph {
@@ -53,6 +53,14 @@
 
   .form-label {
     @apply text-sm font-normal;
+  }
+
+  .icon-list-value {
+    @apply text-xl font-bold;
+  }
+
+  .icon-list-label {
+    @apply text-base font-medium;
   }
 
   .project-title {
