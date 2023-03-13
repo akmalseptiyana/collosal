@@ -14,9 +14,11 @@ export function MainNav() {
           </li>
         ))}
       </ul>
-      <Button variant="light-white" className="hidden lg:inline-flex">
-        Contact
-      </Button>
+      <Link to="/contact">
+        <Button variant="light-white" className="hidden lg:inline-flex">
+          Contact
+        </Button>
+      </Link>
     </>
   );
 }

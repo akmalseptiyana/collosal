@@ -26,12 +26,14 @@ export function MobileNav({ isMobileMenu, setMobileMenu }: MobileNavProps) {
           </li>
         ))}
       </ul>
-      <Button
-        variant="light-white"
-        className="absolute bottom-10 left-2/4 -translate-x-2/4"
-      >
-        Contact
-      </Button>
+      <Link to="/contact">
+        <Button
+          variant="light-white"
+          className="absolute bottom-10 left-2/4 -translate-x-2/4"
+        >
+          Contact
+        </Button>
+      </Link>
 
       <div
         className="absolute top-4 right-4"
