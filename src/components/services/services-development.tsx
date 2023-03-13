@@ -34,7 +34,7 @@ export function ServicesDevelopment() {
               ))}
             </ul>
             <Link
-              to="/services/detail"
+              to="/service/detail"
               className="flex items-center self-end text-base font-semibold text-white"
             >
               Service Detail
