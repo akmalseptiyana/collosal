@@ -1,7 +1,6 @@
 import * as React from "react";
 
-import { Container } from "../ui/container";
-import { HomeSection } from "./home-section";
+import { Container } from "./ui/container";
 import {
   Github,
   Forbes,
@@ -15,9 +14,9 @@ type Props = {
   className?: string;
 };
 
-export function HomeLogos({ className }: Props) {
+export function Logos({ className }: Props) {
   return (
-    <HomeSection>
+    <section>
       <Container className={cn("container mt-[60px]", className)}>
         <ul className="flex flex-wrap items-center justify-center gap-11 border-y border-border-light py-[34px]">
           <li>
@@ -47,6 +46,6 @@ export function HomeLogos({ className }: Props) {
           </li>
         </ul>
       </Container>
-    </HomeSection>
+    </section>
   );
 }
